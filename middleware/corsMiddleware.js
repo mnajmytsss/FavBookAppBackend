@@ -3,7 +3,6 @@ const cors = require('cors')
 const origin = [
   "https://week-15-mnajmytsss.vercel.app", 
   "https://week-15-mnajmytsss.cyclic.app",
-
 ];
 const partnerOrigin = [
   "https://week15.avicena.dev",
