@@ -75,8 +75,10 @@ This API provides endpoints for managing books. There are two clients (Client X 
 
 # Client Permissions
 
-- **My Origin** Can perform all methods (GET, POST, UPDATE, DELETE).
-- **Partner Origin** Can only perform GET and POST methods.
+- There is 3 api in this site that allowed to acces from this site
+    - **Najmy's Api** Can perform all methods (GET, POST, UPDATE, DELETE).
+    - **Deffi's Api** Can only perform GET and POST methods.
+    - **Avicena's Api** Can only perform GET and POST methods.
 
 ## Middleware
 
