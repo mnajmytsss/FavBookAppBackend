@@ -23,8 +23,7 @@ This API provides endpoints for managing books. There are two clients (Client X 
   - Morgan
   - Security XSS
 
-## Getting Started
-
+# Getting Started
 ## API Endpoints
 
 ### Create a New Book
@@ -72,16 +71,13 @@ This API provides endpoints for managing books. There are two clients (Client X 
 - **URL:** `/api/v1/books${id}`
 - **Method:** `DELETE`
 
-
 # Client Permissions
-
 - There is 3 api in this site that allowed to acces from this site
     - **Najmy's Api** Can perform all methods (GET, POST, UPDATE, DELETE).
     - **Deffi's Api** Can only perform GET and POST methods.
     - **Avicena's Api** Can only perform GET and POST methods.
 
 ## Middleware
-
 ### CORS
 
 Cross-Origin Resource Sharing (CORS) is configured to allow all origins for Client X and only permit GET and POST for Client Y.
