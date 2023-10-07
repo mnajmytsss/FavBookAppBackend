@@ -76,7 +76,7 @@ This API provides endpoints for managing books. There are two clients (Client X 
 # Client Permissions
 
 - **My Origin** Can perform all methods (GET, POST, UPDATE, DELETE).
-- **Parten Origin** Can only perform GET and POST methods.
+- **Partner Origin** Can only perform GET and POST methods.
 
 ## Middleware
 
