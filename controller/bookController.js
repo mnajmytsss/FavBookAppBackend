@@ -3,7 +3,7 @@ const { ObjectId } = require('mongodb');
 async function createBook(req, res) {
     const { name, author } = req.body;
 
-    const book = await req.collection.insertOne({
+    const book = await req.booksCollection.insertOne({
         name,
         author,
     });
@@ -16,7 +16,7 @@ async function createBook(req, res) {
 
 async function getAllBook(req, res) {
     const books = await req
-    .collection
+    .booksCollection
     .find({ is_deleted: {$exists: false}})
     .toArray();
 
@@ -30,7 +30,7 @@ async function updateBook(req, res) {
     const id = req.params.id;
     const {name, author} = req.body;
 
-    const book = await req.collection.updateOne(
+    const book = await req.booksCollection.updateOne(
         { _id: new ObjectId(id) },
         {
             $set: {
@@ -48,7 +48,7 @@ async function updateBook(req, res) {
 
 async function deleteBook(req, res) {
     const { id } = req.params;
-    const book = await req.collection.findOneAndUpdate(
+    const book = await req.booksCollection.findOneAndUpdate(
         { _id: new ObjectId(id)},
         {
             $set: {
