@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { JWT_SIGN } = require('../config/jwt');
 
-const validRoles = ['admin', 'author']
+const validRoles = ['admin', 'user']
 
 const register = async (req, res) => {
     const userCollection = req.usersCollection;
